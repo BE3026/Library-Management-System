@@ -17,7 +17,6 @@ const Spinner = ({items}) => {
 
   useEffect(() => {
     if (!loading) {
-      // Show tick mark after spinner completes
       const tickTimer = setTimeout(() => {
         setShowTick(true);
       }, 500);
@@ -27,7 +26,6 @@ const Spinner = ({items}) => {
 
   useEffect(() => {
     if (showTick) {
-      // Show payment done message after tick mark appears
       const paymentTimer = setTimeout(() => {
         setPaymentDone(true);
       }, 500);
