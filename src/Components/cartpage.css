@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  .cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+  }
+  
+  .cart-items li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    animation: slide-in 0.5s ease-out;
+    
+  }
+  
+  .cart-items h3,
+  .cart-items p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .book-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .book-list h2 {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  .book-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .book-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    animation: fade-in 0.5s ease-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-list li:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-list h3,
+  .book-list p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .book-list button {
+    padding-right: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-list button:hover {
+    background-color: #45a049;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

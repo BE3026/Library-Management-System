@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #1e87f0;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+  }
+  
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .tick-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tick-container.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .tick {
+    font-size: 36px;
+    color: #1e87f0;
+    animation: tick 0.6s;
+  }
+  
+  .payment-message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #1e87f0;
+    animation: message-appear 0.3s;
+  }
+  
+  @keyframes tick {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes message-appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
