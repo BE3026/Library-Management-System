@@ -18,9 +18,6 @@ const LoginPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform authentication logic here (e.g., send a request to a server)
-
-    // For demonstration purposes, let's assume the login is successful if the username is "admin" and the password is "password"
     if (username === 'admin' && password === 'password') {
       setIsLoggedIn(true);
     } else {
